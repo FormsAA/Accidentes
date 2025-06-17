@@ -1,0 +1,182 @@
+/* --- Variables de Color Globales (Fácil de personalizar) --- */
+  :root {
+      --primary-color: #005A9C; /* Azul corporativo oscuro */
+      --secondary-color: #0d6efd; /* Un azul más brillante para enlaces/énfasis */
+      --light-gray: #f8f9fa;   /* Color de fondo de la página */
+      --border-color: #dee2e6; /* Color para bordes */
+      --dark-gray-text: #212529; /* Color de texto principal */
+      --error-red-bg: #f8d7da;
+      --error-red-text: #842029;
+      --success-green-bg: #d1e7dd;
+      --success-green-text: #0f5132;
+  }
+
+  /* --- Estilo Base del Cuerpo --- */
+  body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--light-gray);
+      margin: 0;
+      padding: 20px;
+      color: var(--dark-gray-text);
+      line-height: 1.6;
+  }
+
+  /* --- Contenedor Principal --- */
+  .container {
+      max-width: 850px;
+      margin: auto;
+      background: #ffffff;
+      padding: 25px 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      border-top: 5px solid var(--primary-color);
+  }
+
+  /* --- Encabezado --- */
+  header {
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+  }
+  header h1 {
+      color: var(--primary-color);
+      margin: 0;
+      font-size: 2em;
+  }
+  header h2 {
+      font-size: 1.5em;
+  }
+  header p {
+    font-size: 1.1em;
+    color: #6c757d;
+  }
+
+  /* --- Formularios y Secciones --- */
+  fieldset {
+      border: 1px solid var(--border-color);
+      border-radius: 5px;
+      margin-bottom: 25px;
+      padding: 20px;
+  }
+  legend {
+      font-weight: 600;
+      font-size: 1.2em;
+      color: var(--primary-color);
+      padding: 0 10px;
+  }
+
+  /* --- Etiquetas y Campos de Entrada --- */
+  label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: 500;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 1em;
+      transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus,
+  select:focus {
+      outline: none;
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
+  }
+
+  /* --- Botones --- */
+  .submit-btn {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.1em;
+      font-weight: 500;
+      display: block;
+      width: 100%;
+      margin-top: 15px;
+      transition: background-color 0.2s;
+  }
+  .submit-btn:hover {
+      background-color: #00457a; /* Un poco más oscuro */
+  }
+
+  /* --- Lienzo de Firma --- */
+  .signature-pad {
+      border: 2px dashed var(--border-color);
+      border-radius: 4px;
+      width: 100%;
+      height: 200px;
+      cursor: crosshair;
+      background-color: #fff;
+  }
+  #clear-signature {
+      background-color: #6c757d; /* Gris */
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 0.9em;
+  }
+  #clear-signature:hover {
+    background-color: #5a6268;
+  }
+
+  /* --- Indicador de Carga (Spinner) --- */
+  .loader {
+      border: 8px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 8px solid var(--primary-color);
+      width: 50px;
+      height: 50px;
+      animation: spin 1.5s linear infinite;
+      margin: 40px auto;
+  }
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+
+  /* --- Mensajes de Éxito y Error --- */
+  .message {
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      text-align: center;
+  }
+  .success {
+      background-color: var(--success-green-bg);
+      color: var(--success-green-text);
+      border-color: #b6d7c5;
+  }
+  .error {
+      background-color: var(--error-red-bg);
+      color: var(--error-red-text);
+      border-color: #f5c2c7;
+  }
+
+  /* --- Cajas de Información (para partes 2 y 3) --- */
+  .info-box {
+      background-color: #e7f3fe;
+      border-left: 6px solid var(--secondary-color);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+  }

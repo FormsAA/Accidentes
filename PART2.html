@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reporte de Accidentes - Parte 2</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container">
+       <header>
+        <h1>Formulario de Investigación de Accidentes</h1>
+        <p>Sistema de Reporte Interno</p>
+      </header>
+
+      <main id="form-container">
+        <div id="part2" class="form-part">
+            <h2>II. Investigación (Jefe de Área)</h2>
+            <div id="info-part2" class="info-box">Cargando datos del reporte...</div>
+            <form id="form-part2">
+              <input type="hidden" id="reporteId-part2" name="reporteId">
+              <label for="investigacion">Investigación (¿Por qué sucedió el accidente?):</label>
+              <textarea id="investigacion" name="investigacion" rows="6" required></textarea>
+              <label for="planAccion">Plan de Acción (Medidas correctivas):</label>
+              <textarea id="planAccion" name="planAccion" rows="6" required></textarea>
+              <button type="submit" class="submit-btn">Enviar Investigación</button>
+            </form>
+        </div>
+
+        <div id="loader" class="loader" style="display:none;"></div>
+        <div id="success-message" class="message success" style="display:none;"></div>
+        <div id="error-message" class="message error" style="display:none;"></div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

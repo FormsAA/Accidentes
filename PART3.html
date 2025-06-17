@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Reporte de Accidentes - Parte 3</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Formulario de Investigación de Accidentes</h1>
+        <p>Sistema de Reporte Interno</p>
+      </header>
+
+      <main id="form-container">
+        <div id="part3" class="form-part">
+          <h2>III. Análisis Técnico (SST)</h2>
+          <div id="info-part3" class="info-box">Cargando datos del reporte...</div>
+          <form id="form-part3">
+              <input type="hidden" id="reporteId-part3" name="reporteId">
+              <label for="agenteCausante">Agente Causante:</label>
+              <input type="text" id="agenteCausante" name="agenteCausante" required>
+              <label for="actoInseguro">Acto Inseguro:</label>
+              <input type="text" id="actoInseguro" name="actoInseguro" required>
+              <label for="condicionInsegura">Condición Insegura:</label>
+              <input type="text" id="condicionInsegura" name="condicionInsegura" required>
+              <label for="factorPersonal">Factor Personal:</label>
+              <input type="text" id="factorPersonal" name="factorPersonal" required>
+              <button type="submit" class="submit-btn">Finalizar y Generar PDF</button>
+          </form>
+        </div>
+
+        <div id="loader" class="loader" style="display:none;"></div>
+        <div id="success-message" class="message success" style="display:none;"></div>
+        <div id="error-message" class="message error" style="display:none;"></div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
