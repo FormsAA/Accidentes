@@ -19,10 +19,31 @@
             <div id="info-part2" class="info-box">Cargando datos del reporte...</div>
             <form id="form-part2">
               <input type="hidden" id="reporteId-part2" name="reporteId">
-              <label for="investigacion">Investigación (¿Por qué sucedió el accidente?):</label>
-              <textarea id="investigacion" name="investigacion" rows="6" required></textarea>
-              <label for="planAccion">Plan de Acción (Medidas correctivas):</label>
-              <textarea id="planAccion" name="planAccion" rows="6" required></textarea>
+              
+              <fieldset>
+                <legend>Análisis de Causalidad</legend>
+                <label for="investigacionConQue">¿Con qué se accidentó?</label>
+                <textarea id="investigacionConQue" name="investigacionConQue" rows="4" required></textarea>
+                
+                <label for="investigacionPorque">¿Por qué se accidentó?</label>
+                <textarea id="investigacionPorque" name="investigacionPorque" rows="4" required></textarea>
+                
+                <label for="investigacionComo">¿Cómo se accidentó?</label>
+                <textarea id="investigacionComo" name="investigacionComo" rows="4" required></textarea>
+              </fieldset>
+
+              <fieldset>
+                <legend>Plan de Acción</legend>
+                <label for="planAccionMedidas">Medidas para evitar que vuelva a suceder:</label>
+                <textarea id="planAccionMedidas" name="planAccionMedidas" rows="6" required></textarea>
+                
+                <label for="planAccionResponsables">Responsables de la implementación:</label>
+                <input type="text" id="planAccionResponsables" name="planAccionResponsables" required>
+
+                <label for="planAccionFechaImplementacion">Fecha de implementación:</label>
+                <input type="date" id="planAccionFechaImplementacion" name="planAccionFechaImplementacion" required>
+              </fieldset>
+              
               <button type="submit" class="submit-btn">Enviar Investigación</button>
             </form>
         </div>
