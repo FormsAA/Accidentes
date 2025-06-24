@@ -21,13 +21,20 @@
                 <legend>Datos Personales</legend>
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
+
                 <label for="cedula">Número de Cédula:</label>
                 <input type="text" id="cedula" name="cedula" required>
+
+                <label for="estadoCivil">Estado civil:</label>
+                <input type="text" id="estadoCivil" name="estadoCivil" required>
+
+                <label for="nivelEstudio">Nivel de estudio:</label>
+                <input type="text" id="nivelEstudio" name="nivelEstudio" required>
 
                 <label for="telefono">Número de Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" required>
 
-                <label for="cuentaBancaria">Número de Cuenta Bancaria (IBAN):</label>
+                <label for="cuentaBancaria">IBAN:</label>
                 <input type="text" id="cuentaBancaria" name="cuentaBancaria" required>
 
                 <label for="unidad">Unidad a la que pertenece:</label>
@@ -39,6 +46,8 @@
 
             <fieldset>
                 <legend>Dirección de Habitación</legend>
+                <label for="paisHabitacion">País:</label>
+                <input type="text" id="paisHabitacion" name="paisHabitacion" required>
                 <label for="provinciaHabitacion">Provincia:</label>
                 <input type="text" id="provinciaHabitacion" name="provinciaHabitacion" required>
                 <label for="cantonHabitacion">Cantón:</label>
@@ -51,6 +60,11 @@
 
              <fieldset>
                 <legend>Información del Accidente</legend>
+                <label for="fechaAccidente">¿Cuándo sucedió el accidente?:</label>
+                <input type="datetime-local" id="fechaAccidente" name="fechaAccidente" required>
+
+                <label for="paisAccidente">País donde ocurrió:</label>
+                <input type="text" id="paisAccidente" name="paisAccidente" required>
                 <label for="provinciaAccidente">Provincia donde ocurrió:</label>
                 <input type="text" id="provinciaAccidente" name="provinciaAccidente" required>
                 <label for="cantonAccidente">Cantón donde ocurrió:</label>
@@ -59,12 +73,14 @@
                 <input type="text" id="distritoAccidente" name="distritoAccidente" required>
                 <label for="direccionExactaAccidente">Dirección Exacta donde ocurrió:</label>
                 <textarea id="direccionExactaAccidente" name="direccionExactaAccidente" rows="3" required></textarea>
-                <label for="tipoAccidente">Tipo de Accidente:</label>
-                <input type="text" id="tipoAccidente" name="tipoAccidente" placeholder="Ej: Caída, golpe con objeto, corte..." required>
+
+                <label for="descripcionAccidente">Descripción del Accidente:</label>
+                <textarea id="descripcionAccidente" name="descripcionAccidente" placeholder="Ej: Caída al bajar escaleras, golpe con objeto, corte..." rows="4" required></textarea>
             </fieldset>
             
             <fieldset>
                 <legend>Firma del Trabajador</legend>
+                <p>La fecha del reporte se registrará automáticamente.</p>
                 <canvas id="signature-pad" class="signature-pad"></canvas>
                 <button type="button" id="clear-signature">Limpiar Firma</button>
             </fieldset>
