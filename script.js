@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //  ¡ACCIÓN REQUERIDA!
     //  Pega aquí TU PROPIA URL de la aplicación web de Google Apps Script.
     // ==================================================================================
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwZzvcyuS6rNKuvkuQZ-RlJ2uWNLbnKkmXxYGFc4LUxiWbXljM1HUg53xyqlzBeSQnK/exec';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxjMpjhymZBVTj2fwJ7lgf7uq2oJTuqTqs9L2jLOjRm1m_Bwm8BIiJQTWnfTzlBhoBp/exec';
     // ==================================================================================
 
 
